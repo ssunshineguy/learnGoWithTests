@@ -1,7 +1,6 @@
 package arrays
 
 import (
-	"fmt"
 	"reflect"
 	"testing"
 )
@@ -13,8 +12,6 @@ func TestSum(t *testing.T) {
 
 		got := Sum(numbers)
 		want := 6
-		fmt.Printf("address of balance in test is %p \n", &wallet.balance)
-
 		if got != want {
 			t.Errorf("got %d want %d given, %v", got, want, numbers)
 		}
